@@ -1,0 +1,51 @@
+ol{
+    counter-reset: fonctionnement;
+    padding: 0;
+    @media screen and (min-width: $breakpoint-desktop){
+        display: flex;
+    }
+    li{
+        @include flex-centered;
+        list-style-type: none;
+        counter-increment: fonctionnement;
+        width: 92%;
+        margin: auto;
+        margin-bottom: 20px;
+        @media screen and (min-width: $breakpoint-desktop){
+            width: 30%;
+        }
+        a{
+            @include remove-link-style(black);
+            width: 100%;
+            max-width: 437px;
+            background: $main-background-color;
+            box-shadow: $box-shadow-style;
+            border-radius: 20px;
+            height: 72px;
+        }
+        a:hover{
+            background: #F5EDFF;
+        }
+        &:before{
+            content: counter(fonctionnement);
+	        padding: 5px 8px;
+	        background: $primary-color;
+	        border-radius: 60px;
+	        font-weight: bold;
+	        font-size: 0.8em;
+            color: white;
+            position: relative;
+            left: 12px;
+        }
+        i{
+            padding: 0 20px 0 10%;
+            font-size: 20px;
+            color: grey;
+            vertical-align: top;
+        }
+        p{
+            margin: 26.5px 0;
+            font-weight: $bold-weight;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+.title-heart{
+    padding-top: 20px;
+    @include like-button('#heart-restaurant');
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: $breakpoint-desktop){
+        justify-content: center;
+    }
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-weight: $bold-weight;
+        font-size: 28px;
+        margin-bottom: 0;
+        @media screen and (min-width: $breakpoint-desktop){
+            margin-right: 25px;
+        }
+    }
+    label{
+        padding-right: 20px;
+        position: relative;
+        width: 22px;
+        font-size: 25px;
+    }
+    i{
+        position: absolute;
+        top: -5px;
+    }
+}
+
+.menu{
+    padding: 0 18px 75px 18px;
+    position: relative;
+    margin: 0;
+    border-radius: 40px 40px 0 0;
+    h2{
+        display: block;
+        width: 100%;
+        position: relative;
+        padding-bottom: 8px;
+        font-size: 17px;
+        font-weight: $normal-weight;
+        @media screen and (min-width: $breakpoint-desktop){
+            text-align: center;
+            font-size: 20px;
+            font-weight: $bold-weight;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 10px;
+            bottom: 0;
+            border-bottom: 3px solid $tertiary-color;
+            @media screen and (min-width: $breakpoint-desktop){
+                width: 66%;
+                right: 15%;
+                border-bottom-width: 5px;
+            }
+        }
+    }
+    .center-menu{
+        @media screen and (min-width: $breakpoint-desktop){
+            margin-left: 34.25%;
+            margin-top: 0;
+        }
+    }
+    .button a{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.checkbox-link{
+    @include menu-checked('#submenu-like1');
+    @include menu-checked('#submenu-like2');
+    @include menu-checked('#submenu-like3');
+    @include menu-checked('#submenu-like4');
+    @include menu-checked('#submenu-like5');
+    @include menu-checked('#submenu-like6');
+    @include menu-checked('#submenu-like7');
+    @include menu-checked('#submenu-like8');
+    @include menu-checked('#submenu-like9');
+    @include menu-checked('#submenu-like10');
+    margin-top: 22px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: $box-shadow-style;
+    border-radius: 15px;
+    &:hover{
+        i{
+            transform: translateX(0) rotate(360deg);
+        }
+        .item-submenu-checkbox{
+            transform: translateX(-10px);
+        }
+    }
+    input{
+        display: none;
+    }
+    i{
+        transition: transform 1.75s ease;
+        transform: translateX(50px) rotate(0deg);
+        z-index: 1;
+        position: absolute;
+        right: 21px;
+        top: 23px;
+        padding: 3px;
+        background-color: white;
+        border-radius: 100%;
+        font-size: 13px;
+        color: $tertiary-color;
+    }
+    @media screen and (min-width: $breakpoint-desktop){
+        display: inline-block;
+        max-width: 28%;
+        margin: 20px 2%;
+        margin-bottom: 40px;
+    }
+}
+
+.item-submenu{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0 1px 10px;
+    width: 100%;
+    height: 65px;
+    input{
+        display: none;
+    }
+    h3{
+        font-size: 18px;
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+    .item-submenu-name{
+        display: inline-block;
+        width: 90%;
+    }
+    .item-submenu-text{
+        width: 80%;
+        flex: 1 8 0;
+    }
+    .item-submenu-checkbox{
+        height: 70px;
+        flex: 0 0 60px;
+        background-color: $tertiary-color;
+        transform: translateX(60px);
+        transition: transform 1.75s ease;
+    }
+    .item-submenu-wrap{
+        flex: 1 5 0;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        .item-submenu-info{
+            flex: 1 4 256.1px;
+            margin-right: 1px;
+            margin-top: 0;
+            font-weight: $thin-weight;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .item-submenu-price{
+            margin-right: 10px;
+            position: relative;
+            text-align: center;
+            flex: 0 0 0;
+            position: relative;
+            left: 40px;
+            transition: left 1s ease-in, margin-right 1s ease-in;
+        }
+    }
+}
+
+.checkbox-link:hover .item-submenu-price{
+    left: 0;
+    margin-right: 20px;
+    flex: 0 0 50px;
+}
+
+.repas-margin{
+    margin-bottom: 40px;
+    @media screen and (min-width: $breakpoint-desktop){
+        margin-bottom: 40px;
+    }
+}

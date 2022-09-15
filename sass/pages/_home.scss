@@ -1,0 +1,65 @@
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media screen and (min-width: $breakpoint-desktop){
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 94%;
+        margin: auto;
+    }
+}
+
+.item-restaurant{
+    border-radius: 15px;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    box-shadow: $box-shadow-style;
+    @media screen and (min-width: $breakpoint-desktop){
+        width: 46%;
+        margin-bottom: 30px;
+    }
+    .card-img{
+        border-radius: 15px 15px 0 0;
+        height: 170px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    h3, p{
+        margin: 0;
+    }
+    .container{
+        @include flex-centered;
+        justify-content: space-between;
+    }
+}
+
+.item-restaurant:nth-child(2) img{
+    object-position: 0 -150px;
+}
+
+.container{
+    height: 80px;
+    margin-left: 10px;
+}
+
+.new{
+    color: #589686;
+    border-radius: 3px;
+    position: absolute;
+    font-size: 14px;
+    right: 3.5%;
+    top: 5%;
+    box-sizing: content-box;
+    padding: 6px 10px;
+    width: 55.1333px;
+    background-color: $tertiary-color;
+}
