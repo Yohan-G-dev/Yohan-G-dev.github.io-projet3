@@ -63,3 +63,5 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 Langage utilisé : SASS et HTML
 langage interdit : JavaScript, Frameworks CSS, CSS.
+
+Projet réaliser sur le logiciel Visual Studio Code.
