@@ -1,12 +1,16 @@
 # Yohan-G-dev.github.io
 Projet 3 OpenClassroom : Dynamisez une page web avec des animations CSS "OhMyFood!"
 
+
 Objectifs : 
 
 Développer un site proposant 4 menu de restaurant
 Permettre la réservation en ligne et la composition de menus
 
+
+
 Livrable attendus :
+
 
 Page d’accueil (x1)
 
@@ -18,10 +22,12 @@ l’utilisateur est redirigé vers la page du menu.
 Pages de menu (x4)
 ● 4 pages contenant chacune le menu d’un restaurant.
 
+
 Footer
 
 ● Le footer est identique sur toutes les pages.
 ● Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
+
 
 Header
 
@@ -29,7 +35,9 @@ Header
 ● Sur la page d’accueil, il contient le logo du site.
 ● Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil
 
+
 Effets graphiques et animations :
+
 
 Boutons
 
@@ -40,6 +48,7 @@ bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il de
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
 survol sur desktop au lieu du clic.
 
+
 Page d’accueil
 
 ● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
@@ -48,6 +57,7 @@ cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendan
 utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
 toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
 graphique du site.
+
 
 Pages de menu
 
@@ -63,5 +73,6 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 Langage utilisé : SASS et HTML
 langage interdit : JavaScript, Frameworks CSS, CSS.
+
 
 Projet réaliser sur le logiciel Visual Studio Code.
