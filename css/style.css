@@ -983,7 +983,7 @@ section a {
   flex: 0 0 0;
   position: relative;
   left: 40px;
-  transition: left 1.75s ease-in, margin-right 1s ease-in;
+  transition: left 1.75s ease, margin-right 1.75s ease;
 }
 
 .checkbox-link:hover .item-submenu-price {
