@@ -1,0 +1,48 @@
+@keyframes fadein{
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loading {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: $primary-color;
+      border-bottom-color: $primary-color;
+    }
+    25%{
+      border-top-color: $secondary-color;
+      border-bottom-color: $secondary-color;
+    }
+    50% {
+       transform: rotate(360deg) scale(1.15);
+      border-top-color: $primary-color;
+      border-bottom-color: $primary-color;
+    }
+    75%{
+      border-top-color: $secondary-color;
+      border-bottom-color: $secondary-color;
+    }
+    100%{
+       transform: rotate(720deg) scale(1);
+      border-top-color: $primary-color;
+      border-bottom-color: $primary-color;
+    }
+}

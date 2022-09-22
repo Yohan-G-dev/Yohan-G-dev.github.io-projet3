@@ -1,0 +1,8 @@
+@for $i from 1 through 10{
+    .appear#{$i} {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadein 1s ease forwards;
+        animation-delay: $i * 0.15s;
+    }
+}

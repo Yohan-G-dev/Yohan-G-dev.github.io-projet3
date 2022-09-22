@@ -1,0 +1,23 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #353535;
+    z-index: 10;
+    animation: fadeout ease 0.5s 4s forwards;
+    @include flex-centered;
+    &:after{
+        content: "";
+        background: url("../../assets/logo/ohmyfood@2x.svg") no-repeat center;
+        background-size: 100% 100%;
+        width: 120px;
+        height: 120px;
+        border: 16px solid $tertiary-color;
+        border-radius: 50%;
+        border-top-color: $primary-color;
+        border-bottom-color: $secondary-color;
+        animation: loading 4s linear infinite;
+    }
+}
